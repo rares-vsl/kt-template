@@ -5,10 +5,10 @@ plugins {
 
 gitHooks {
     preCommit {
-        tasks("ktlintCheck")
+        tasks("addKtlintCheckGitPreCommitHook")
     }
     commitMsg { conventionalCommits() }
-    createHooks()
+    createHooks(true)
 }
 
-rootProject.name = "kt-template"
+rootProject.name = "kotlin"
