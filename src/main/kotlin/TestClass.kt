@@ -1,7 +1,7 @@
 class TestClass { // extra spaces
 
     fun sayHello() { // wrong spacing
-        println("Hello, Ktlint!") // space after (
+        println("new") // space after (
     }
 
     fun add(
