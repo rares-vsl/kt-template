@@ -31,6 +31,9 @@ Thumbs.db
 *.dex
 *.class
 
+# Node.js dependencies
+node_modules/
+
 # Miscellaneous
 *.log
 *.jks
