@@ -33,6 +33,10 @@ gitSemVer {
     minimumVersion.set("0.1.0")
 }
 
+tasks.dokkaHtml.configure {
+    outputDirectory.set(file("$rootDir/doc"))
+}
+
 tasks.named<Test>("test") {
     useJUnitPlatform()
 }

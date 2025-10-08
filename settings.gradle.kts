@@ -4,9 +4,6 @@ plugins {
 }
 
 gitHooks {
-    preCommit {
-        tasks("addKtlintCheckGitPreCommitHook")
-    }
     commitMsg { conventionalCommits() }
     createHooks(true)
 }

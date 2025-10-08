@@ -8,7 +8,7 @@ COPY . .
 
 RUN gradle build --no-daemon
 
-# Stage 2: Runtime with slim JRE
+# Stage 2: Runtime with slim JDK
 FROM openjdk:21-jdk-slim
 WORKDIR /app
 
@@ -16,3 +16,5 @@ COPY --from=builder /usr/src/app/build/libs/*.jar app.jar
 EXPOSE 3000
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
+
