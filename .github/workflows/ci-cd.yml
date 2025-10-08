@@ -190,4 +190,4 @@ jobs:
           provenance: false
 
       - name: Verify Docker Image
-        run: docker pull ghcr.io/${{ needs.setup.outputs.repository-lowercase }}:latest
+        run: docker pull ghcr.io/${{ steps.repo_name.outputs.lowercase }}:latest
