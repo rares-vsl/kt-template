@@ -1,10 +1,14 @@
-name: workflow.yml
+name: CI-CD
 on:
   push:
     branches: [main, dev]
   pull_request:
     branches: [main, dev]
     types: [ opened, synchronize, reopened ]
+
+permissions:
+  contents: read
+
 jobs:
   gradle-build:
     runs-on: ubuntu-latest
