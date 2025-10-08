@@ -100,7 +100,7 @@ jobs:
 
       - uses: actions/setup-node@v5
         with:
-          node-version: package.json
+          node-version-file: package.json
           cache: npm
           cache-dependency-path: package-lock.json
 
