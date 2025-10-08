@@ -69,7 +69,7 @@ jobs:
       - name: Move and Rename Detekt Report
         if: matrix.task == 'code-analysis'
         run: |
-          cp app/build/reports/detekt/detekt.md code-analysis-report.txt
+          cp build/reports/detekt/detekt.md code-analysis-report.txt
 
       - name: Run Test
         if: matrix.task == 'test'
